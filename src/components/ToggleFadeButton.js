@@ -8,9 +8,9 @@ const ToggleFadeButton = () => {
 
   return (
     <div>
-      <button onClick={toggleVisibility}>Mostrar/Ocultar Parágrafo</button>
+      <button onClick={toggleVisibility}>Mostrar/Ocultar Párrafo</button>
       <p id="toggle-paragraph" style={{ display: 'none' }}>
-        Este parágrafo aparece e desaparece com fade.
+        Este párrafo aparece y desaparece con fade.
       </p>
     </div>
   );

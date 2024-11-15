@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import anime from 'animejs';
 
-const AnimeJSAnimation = () => {
-  const [items] = useState(['Item 1', 'Item 2', 'Item 3']);
+const AnimaciónAnimeJS = () => {
+  const [items] = useState(['Ítem 1', 'Ítem 2', 'Ítem 3']);
   
-  const animateItems = () => {
+  const animarItems = () => {
     anime({
       targets: '.item',
       translateX: 250,
       opacity: [0, 1],
       duration: 1000,
-      delay: anime.stagger(200),  // Delay de 200ms entre os itens
-      elasticity: 400  // Efeito de rebote
+      delay: anime.stagger(200),  // Retraso de 200ms entre los ítems
+      elasticity: 400  // Efecto de rebote
     });
   };
 
   return (
     <div>
-      <button onClick={animateItems}>Animar Itens</button>
+      <button onClick={animarItems}>Animar Ítems</button>
       <ul>
         {items.map((item, index) => (
           <li key={index} className="item">{item}</li>
@@ -27,4 +27,4 @@ const AnimeJSAnimation = () => {
   );
 };
 
-export default AnimeJSAnimation;
+export default AnimaciónAnimeJS;

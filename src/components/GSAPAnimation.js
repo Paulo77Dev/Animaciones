@@ -9,16 +9,16 @@ const GSAPAnimation = () => {
     if (!animate) {
       gsap.to('.box', {
         duration: 2,
-        x: 300,  // Muda a posição X
-        scale: 1.5,  // Aumenta o tamanho
-        backgroundColor: 'blue'  // Muda a cor de fundo
+        x: 300,  // Cambia la posición X
+        scale: 1.5,  // Aumenta el tamaño
+        backgroundColor: 'blue'  // Cambia el color de fondo
       });
     } else {
       gsap.to('.box', {
         duration: 2,
-        x: 0,  // Volta para a posição inicial
-        scale: 1,  // Retorna ao tamanho original
-        backgroundColor: 'red'  // Retorna à cor original
+        x: 0,  // Vuelve a la posición inicial
+        scale: 1,  // Regresa al tamaño original
+        backgroundColor: 'red'  // Vuelve al color original
       });
     }
   };

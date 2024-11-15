@@ -8,7 +8,7 @@ import './styles/App.css';
 const App = () => {
   return (
     <div className="App">
-      <h1>Manipulação e Animações com React</h1>
+      <h1>Manipulación y Animaciones con React</h1>
       <ChangeColorButton />
       <ToggleFadeButton />
       <GSAPAnimation />
