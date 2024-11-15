@@ -1,20 +1,129 @@
+/* Aplica estilos gerais na aplicação */
 .App {
+  display: flex; /* Usa flexbox para facilitar a centralização */
+  flex-direction: column; /* Alinha elementos em uma coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  min-height: 100vh; /* Faz com que a altura mínima ocupe a tela inteira */
   text-align: center;
   padding: 20px;
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
 }
 
+/* Estiliza os botões */
 button {
-  padding: 10px;
+  padding: 10px 20px; /* Adiciona padding mais amplo */
   margin: 10px;
   font-size: 16px;
   cursor: pointer;
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  background-color: #007BFF; /* Cor de fundo azul */
+  color: white; /* Cor do texto */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
 }
 
+button:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estiliza a caixa com animações */
 .box {
   transition: all 2s ease;
+  max-width: 100%; /* Limita a largura máxima */
+  width: 300px; /* Largura padrão da caixa */
+  margin: 20px auto; /* Centraliza a caixa horizontalmente */
 }
 
+/* Estiliza itens da lista */
 .item {
   margin: 5px 0;
   font-size: 18px;
+  word-wrap: center; /* Quebra palavras longas */
+}
+
+/* Responsividade: ajusta o layout para telas menores */
+@media (max-width: 768px) {
+  .App {/* Aplica estilos gerais na aplicação */
+    .App {
+      display: flex; /* Usa flexbox para facilitar a centralização */
+      flex-direction: column; /* Alinha elementos em uma coluna */
+      justify-content: center; /* Centraliza verticalmente */
+      align-items: center; /* Centraliza horizontalmente */
+      min-height: 100vh; /* Faz com que a altura mínima ocupe a tela inteira */
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    }
+    
+    /* Estiliza os botões */
+    button {
+      padding: 10px 20px; /* Adiciona padding mais amplo */
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none; /* Remove a borda padrão */
+      border-radius: 5px; /* Adiciona bordas arredondadas */
+      background-color: #007BFF; /* Cor de fundo azul */
+      color: white; /* Cor do texto */
+      transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    }
+    
+    button:hover {
+      background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    }
+    
+    /* Estiliza a caixa com animações */
+    .box {
+      transition: all 2s ease;
+      max-width: 100%; /* Limita a largura máxima */
+      width: 300px; /* Largura padrão da caixa */
+      margin: 20px auto; /* Centraliza a caixa horizontalmente */
+    }
+    
+    /* Estiliza itens da lista */
+    .item {
+      margin: 5px 0;
+      font-size: 18px;
+      text-align: center; /* Centraliza o texto dos itens */
+      width: 100%; /* Garante que os itens ocupem toda a largura disponível */
+      display: flex; /* Usa flexbox para manipular a centralização */
+      justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    }
+    
+    /* Responsividade: ajusta o layout para telas menores */
+    @media (max-width: 768px) {
+      .App {
+        padding: 10px;
+      }
+    
+      button {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+        padding: 8px 16px; /* Ajusta o padding */
+      }
+    
+      .box {
+        width: 100%; /* Faz a caixa ocupar toda a largura disponível */
+      }
+    
+      .item {
+        font-size: 16px; /* Reduz o tamanho da fonte em itens da lista */
+      }
+    }
+    
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    padding: 8px 16px; /* Ajusta o padding */
+  }
+
+  .box {
+    width: 100%; /* Faz a caixa ocupar toda a largura disponível */
+  }
+
+  .item {
+    font-size: 16px; /* Reduz o tamanho da fonte em itens da lista */
+  }
 }
