@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import anime from 'animejs';
 
 const AnimeJSAnimation = () => {
-  const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3']);
+  const [items] = useState(['Item 1', 'Item 2', 'Item 3']);
   
   const animateItems = () => {
     anime({
